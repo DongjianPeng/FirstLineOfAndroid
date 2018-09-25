@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/sient_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="use hid intent" />
+
+    <Button
+        android:id="@+id/open_website_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="open bing in website" />
+
+    <Button
+        android:id="@+id/open_my_website_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="open bing my my website" />
+
+    <Button
+        android:id="@+id/opem_call_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call phone number" />
+
+    <Button
+        android:id="@+id/extra_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Extra data" />
+</LinearLayout>

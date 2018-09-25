@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_menu_btn_1"
+        android:title="main_menu_btn_1" />
+    <item
+        android:id="@+id/main_menu_btn_2"
+        android:title="main_menu_btn_2" />
+    <item
+        android:id="@+id/main_menu_btn_3"
+        android:title="main_menu_btn_3" />
+    <item
+        android:id="@+id/main_menu_btn_4"
+        android:title="main_menu_btn_4" />
+    <item
+        android:id="@+id/main_menu_btn_5"
+        android:title="main_menu_btn_5" />
+    <item
+        android:id="@+id/main_menu_btn_6"
+        android:title="main_menu_btn_6" />
+    <item
+        android:id="@+id/main_menu_btn_7"
+        android:title="main_menu_btn_7" />
+    <item
+        android:id="@+id/main_menu_btn_8"
+        android:title="main_menu_btn_8" />
+    <item
+        android:id="@+id/main_menu_btn_9"
+        android:title="main_menu_btn_9" />
+    <item
+        android:id="@+id/main_menu_btn_exit"
+        android:title="Exit" />
+
+</menu>
