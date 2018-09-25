@@ -41,8 +41,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".View02.ActivityLife" />
-        <activity android:name=".View02.NormalActivity" />
-        <activity android:name=".View02.DialogActivity" android:theme="@style/Animation.AppCompat.Dialog"></activity>
+        <activity
+            android:name=".View02.NormalActivity"
+            android:launchMode="standard" />
+        <activity
+            android:name=".View02.DialogActivity"
+            android:theme="@style/Theme.AppCompat.Dialog"></activity>
     </application>
 
 </manifest>
