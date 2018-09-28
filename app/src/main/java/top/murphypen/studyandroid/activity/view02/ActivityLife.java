@@ -1,6 +1,5 @@
-package top.murphypen.studyandroid.activity.View02;
+package top.murphypen.studyandroid.activity.view02;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import top.murphypen.studyandroid.activity.R;

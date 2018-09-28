@@ -1,4 +1,4 @@
-package top.murphypen.studyandroid.activity.View03;
+package top.murphypen.studyandroid.activity.view02;
 
 import android.os.Bundle;
 
@@ -6,12 +6,13 @@ import top.murphypen.studyandroid.activity.R;
 import top.murphypen.studyandroid.activity.base.BaseActivity;
 import top.murphypen.studyandroid.activity.base.value.OpenViewValue;
 
-public class WidgetViewActivity extends BaseActivity {
+public class NormalActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        showLifeLogger();
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_widget_view);
-        addOnClickListenerForOpenView(new OpenViewValue(R.id.show_widget_btn, WidgetViewActivity.class));
+        setContentView(R.layout.activity_normal);
+        addOnClickListenerForOpenView(new OpenViewValue(R.id.back_start_activity_life_btn,ActivityLife.class));
     }
 }
