@@ -46,7 +46,8 @@
             android:launchMode="standard" />
         <activity
             android:name=".View02.DialogActivity"
-            android:theme="@style/Theme.AppCompat.Dialog"></activity>
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".View03.WidgetViewActivity"></activity>
     </application>
 
 </manifest>
