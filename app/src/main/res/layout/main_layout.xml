@@ -2,18 +2,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
     <Button
         android:id="@+id/main_btn_1"
-        android:text="Go HidView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Go HidView"
+        android:textAllCaps="false" />
+
     <Button
         android:id="@+id/show_activity_life_btn"
-        android:text="show acitivity life"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="show acitivity life"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/show_widget_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show Widget View"
+        android:textAllCaps="false" />
 
 </LinearLayout>
