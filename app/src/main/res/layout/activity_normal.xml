@@ -9,4 +9,10 @@
         android:layout_height="wrap_content"
         android:text="This is normal activity" />
 
+    <Button
+        android:id="@+id/back_start_activity_life_btn"
+        android:text="Open Life"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

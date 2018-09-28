@@ -40,7 +40,7 @@
                 <data android:scheme="http" />
             </intent-filter>
         </activity>
-        <activity android:name=".View02.ActivityLife" />
+        <activity android:name=".View02.ActivityLife" android:launchMode="singleInstance" />
         <activity
             android:name=".View02.NormalActivity"
             android:launchMode="standard" />

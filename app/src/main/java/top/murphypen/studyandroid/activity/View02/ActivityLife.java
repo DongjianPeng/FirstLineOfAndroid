@@ -21,8 +21,11 @@ public class ActivityLife extends BaseActivity {
             ToastUtil.show(this, value);
         }
 
+
 //        addOnClickListener(R.id.start_normal_btn,R.id.start_dialog_btn);
-        addOnClickListenerForOpenView(new OpenViewValue(R.id.start_normal_btn, NormalActivity.class),
+        addOnClickListenerForOpenView(
+                new OpenViewValue(R.id.start_self_btn, ActivityLife.class),
+                new OpenViewValue(R.id.start_normal_btn, NormalActivity.class),
                 new OpenViewValue(R.id.start_dialog_btn, DialogActivity.class));
     }
 

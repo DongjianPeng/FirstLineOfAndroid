@@ -14,9 +14,7 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        if (lifeLogger) {
-            Log.d(TAG, ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>[" + TAG + "]:onCreate");
-        }
+        Log.d(TAG, ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>[" + TAG + "]:onCreate");
         super.onCreate(savedInstanceState);
     }
 
@@ -85,9 +83,10 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
             });
     }
 
-    protected void showLifeLogger(){
+    protected void showLifeLogger() {
         this.lifeLogger = true;
     }
+
     @Override
     public void onClick(View v) {
 
