@@ -8,10 +8,13 @@ import android.view.View;
 import android.widget.Toast;
 
 import top.murphypen.studyandroid.activity.R;
-import top.murphypen.studyandroid.activity.view02.ActivityLife;
 import top.murphypen.studyandroid.activity.base.BaseActivity;
 import top.murphypen.studyandroid.activity.base.value.OpenViewValue;
 import top.murphypen.studyandroid.activity.view01.SIntent;
+import top.murphypen.studyandroid.activity.view02.ActivityLife;
+import top.murphypen.studyandroid.activity.view03.FrameDemoActivity;
+import top.murphypen.studyandroid.activity.view03.PercentFrameActivity;
+import top.murphypen.studyandroid.activity.view03.WidgetViewActivity;
 
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
@@ -20,8 +23,13 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_layout);
+
         addOnClickListener(R.id.main_btn_1);
-        addOnClickListenerForOpenView(new OpenViewValue(R.id.show_activity_life_btn, ActivityLife.class));
+        addOnClickListenerForOpenView(new OpenViewValue(R.id.show_activity_life_btn, ActivityLife.class),
+                new OpenViewValue(R.id.show_widget_btn, WidgetViewActivity.class),
+                new OpenViewValue(R.id.show_frame_btn, FrameDemoActivity.class),
+                new OpenViewValue(R.id.show_percent_frame_btn, PercentFrameActivity.class)
+        );
     }
 
     @Override

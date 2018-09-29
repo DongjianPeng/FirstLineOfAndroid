@@ -25,4 +25,17 @@
         android:text="show Widget View"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/show_frame_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show Frame View"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/show_percent_frame_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show percent frame View"
+        android:textAllCaps="false" />
+
 </LinearLayout>

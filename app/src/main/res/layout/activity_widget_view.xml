@@ -1,8 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/show_image1_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Image View 1"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/show_alert_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show alert dialog 1"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/show_progress_dialog_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show alert progress dialog 1[deprecated]"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/show_progress_dialog2_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show alert progress dialog 2"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/show_linear_layout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Linear Layout Demo"
+        android:textAllCaps="false" />
+
+</LinearLayout>

@@ -40,14 +40,21 @@
                 <data android:scheme="http" />
             </intent-filter>
         </activity>
-        <activity android:name=".view02.ActivityLife" android:launchMode="singleInstance" />
+        <activity
+            android:name=".view02.ActivityLife"
+            android:launchMode="singleInstance" />
         <activity
             android:name=".view02.NormalActivity"
             android:launchMode="standard" />
         <activity
             android:name=".view02.DialogActivity"
             android:theme="@style/Theme.AppCompat.Dialog" />
-        <activity android:name=".view03.WidgetViewActivity"></activity>
+        <activity android:name=".view03.WidgetViewActivity" />
+        <activity android:name=".view03.ImageView1Activity" />
+        <activity android:name=".view03.LinearLayoutDemo" />
+        <activity android:name=".view03.RelativeDemoActivity" />
+        <activity android:name=".view03.FrameDemoActivity" />
+        <activity android:name=".view03.PercentFrameActivity"></activity>
     </application>
 
 </manifest>
