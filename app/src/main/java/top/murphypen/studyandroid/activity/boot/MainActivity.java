@@ -2,6 +2,7 @@ package top.murphypen.studyandroid.activity.boot;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,6 +24,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_layout);
+        ActionBar supportActionBar = getSupportActionBar();
+        supportActionBar.setTitle(R.string.app_name);
 
         addOnClickListener(R.id.main_btn_1);
         addOnClickListenerForOpenView(new OpenViewValue(R.id.show_activity_life_btn, ActivityLife.class),
