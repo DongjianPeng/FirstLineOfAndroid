@@ -39,4 +39,18 @@
         android:text="Show Linear Layout Demo"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/show_broadcast_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send broadcast demo"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/show_forceoffline_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send force offline broadcast"
+        android:textAllCaps="false" />
+
 </LinearLayout>
