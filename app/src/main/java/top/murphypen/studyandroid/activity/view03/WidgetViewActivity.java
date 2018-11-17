@@ -3,14 +3,19 @@ package top.murphypen.studyandroid.activity.view03;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.content.LocalBroadcastManager;
 import android.view.View;
 import android.widget.ProgressBar;
+
+import java.io.FileNotFoundException;
 
 import top.murphypen.studyandroid.activity.R;
 import top.murphypen.studyandroid.activity.base.BaseActivity;
 import top.murphypen.studyandroid.activity.base.value.OpenViewValue;
 import top.murphypen.studyandroid.util.ToastUtil;
+import top.murphypen.studyandroid.value.broadcast.local.FroceOfflineValue;
 
 public class WidgetViewActivity extends BaseActivity {
     @Override
@@ -23,7 +28,10 @@ public class WidgetViewActivity extends BaseActivity {
         );
         addOnClickListener(R.id.show_alert_btn,
                 R.id.show_progress_dialog_btn,
-                R.id.show_progress_dialog2_btn);
+                R.id.show_progress_dialog2_btn,
+                R.id.show_broadcast_btn,
+                R.id.show_forceoffline_btn
+        );
     }
 
     @Override
@@ -70,6 +78,31 @@ public class WidgetViewActivity extends BaseActivity {
             case R.id.show_progress_dialog2_btn: {
 
             }
+            break;
+
+            case R.id.show_broadcast_btn: {
+                Intent intent = new Intent("com.murphypen.broadcast.MyBroadcast1");
+                intent.putExtra("msg", "hhh");
+                //标准广播
+//                sendBroadcast(intent);
+                //有序广播
+                sendOrderedBroadcast(intent, null);
+            }
+            break;
+
+            case R.id.show_forceoffline_btn: {
+                Intent intent = new Intent("com.murphy.broadcast.local");
+                intent.putExtra("data",new FroceOfflineValue("wfsdfsdf",true));
+                LocalBroadcastManager localBroadcastManager = LocalBroadcastManager.getInstance(this);
+//                localBroadcastManager.sendBroadcast(intent);
+                sendBroadcast(intent);
+                try {
+                    this.openFileOutput("",MODE_APPEND);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
+            }
+
             break;
 
             default:

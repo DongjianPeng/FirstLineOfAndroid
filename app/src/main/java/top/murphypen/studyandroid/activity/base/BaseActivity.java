@@ -1,16 +1,24 @@
 package top.murphypen.studyandroid.activity.base;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import android.content.IntentFilter;
 import android.os.Bundle;
+import android.support.v4.content.LocalBroadcastManager;
+import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 
 import top.murphypen.studyandroid.activity.base.value.OpenViewValue;
+import top.murphypen.studyandroid.broadcast.LocalBroadcastReceiver;
 
 public class BaseActivity extends AppCompatActivity implements View.OnClickListener {
     protected String TAG = getClass().getSimpleName();
     private boolean lifeLogger;
+
+    private LocalBroadcastManager localBroadcastManager;
+    private LocalBroadcastReceiver localBroadcastReceiver;
+    private IntentFilter intentFilter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +40,13 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
             Log.d(TAG, ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>[" + TAG + "]:onResume");
         }
         super.onResume();
+        localBroadcastManager = LocalBroadcastManager.getInstance(this);
+        intentFilter = new IntentFilter("com.murphy.broadcast.local");
+        localBroadcastReceiver = new LocalBroadcastReceiver();
+//        localBroadcastManager.registerReceiver(localBroadcastReceiver, intentFilter);
+        registerReceiver(localBroadcastReceiver,intentFilter);
     }
+
 
     @Override
     protected void onPause() {
@@ -40,6 +54,10 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
             Log.d(TAG, ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>[" + TAG + "]:onPause");
         }
         super.onPause();
+        if (localBroadcastManager != null && localBroadcastReceiver != null) {
+            localBroadcastManager.unregisterReceiver(localBroadcastReceiver);
+        }
+        unregisterReceiver(localBroadcastReceiver);
     }
 
     @Override
