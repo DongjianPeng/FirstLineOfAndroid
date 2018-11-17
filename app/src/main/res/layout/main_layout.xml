@@ -26,16 +26,25 @@
         android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/show_frame_btn"
+        android:id="@+id/show_layout_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="show Frame View"
+        android:text="show layout view"
         android:textAllCaps="false" />
+
     <Button
-        android:id="@+id/show_percent_frame_btn"
+        android:id="@+id/show_listview_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="show percent frame View"
+        android:text="show list view view"
         android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/show_recycler_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show recycler view view"
+        android:textAllCaps="false" />
+
 
 </LinearLayout>

@@ -5,31 +5,38 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/show_image1_btn"
+        android:id="@+id/show_linear_layout_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show Image View 1"
+        android:text="Show Linear Layout Demo"
         android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/show_alert_btn"
+        android:id="@+id/show_relative_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show alert dialog 1"
+        android:text="Show Relative Layout Demo"
         android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/show_progress_dialog_btn"
+        android:id="@+id/show_frame_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show alert progress dialog 1[deprecated]"
+        android:text="show Frame View"
         android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/show_progress_dialog2_btn"
+        android:id="@+id/show_percent_frame_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show alert progress dialog 2"
+        android:text="show percent frame View"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/show_include_layout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Include Layout View"
         android:textAllCaps="false" />
 
 

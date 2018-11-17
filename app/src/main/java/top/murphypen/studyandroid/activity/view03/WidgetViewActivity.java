@@ -5,6 +5,7 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ProgressBar;
 
 import top.murphypen.studyandroid.activity.R;
 import top.murphypen.studyandroid.activity.base.BaseActivity;
@@ -16,8 +17,9 @@ public class WidgetViewActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_widget_view);
-        addOnClickListenerForOpenView(new OpenViewValue(R.id.show_image1_btn, ImageView1Activity.class),
-                new OpenViewValue(R.id.show_linear_layout_btn, LinearLayoutDemo.class)
+
+        addOnClickListenerForOpenView(new OpenViewValue(R.id.show_image1_btn, ImageView1Activity.class)
+
         );
         addOnClickListener(R.id.show_alert_btn,
                 R.id.show_progress_dialog_btn,
@@ -50,7 +52,6 @@ public class WidgetViewActivity extends BaseActivity {
                     @Override
                     public void onCancel(DialogInterface dialog) {
                         ToastUtil.show(WidgetViewActivity.this, "Cancel");
-
                     }
                 });
                 alertDialog.show();
@@ -67,7 +68,6 @@ public class WidgetViewActivity extends BaseActivity {
             break;
 
             case R.id.show_progress_dialog2_btn: {
-
 
             }
             break;

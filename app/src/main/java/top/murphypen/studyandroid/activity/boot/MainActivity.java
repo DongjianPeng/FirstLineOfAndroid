@@ -13,9 +13,10 @@ import top.murphypen.studyandroid.activity.base.BaseActivity;
 import top.murphypen.studyandroid.activity.base.value.OpenViewValue;
 import top.murphypen.studyandroid.activity.view01.SIntent;
 import top.murphypen.studyandroid.activity.view02.ActivityLife;
-import top.murphypen.studyandroid.activity.view03.FrameDemoActivity;
-import top.murphypen.studyandroid.activity.view03.PercentFrameActivity;
+import top.murphypen.studyandroid.activity.view03.LayoutActivity;
+import top.murphypen.studyandroid.activity.view03.RecyclerViewActivity;
 import top.murphypen.studyandroid.activity.view03.WidgetViewActivity;
+import top.murphypen.studyandroid.activity.view03.listview.ListViewActivity;
 
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
@@ -24,14 +25,16 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_layout);
+
         ActionBar supportActionBar = getSupportActionBar();
         supportActionBar.setTitle(R.string.app_name);
 
         addOnClickListener(R.id.main_btn_1);
         addOnClickListenerForOpenView(new OpenViewValue(R.id.show_activity_life_btn, ActivityLife.class),
                 new OpenViewValue(R.id.show_widget_btn, WidgetViewActivity.class),
-                new OpenViewValue(R.id.show_frame_btn, FrameDemoActivity.class),
-                new OpenViewValue(R.id.show_percent_frame_btn, PercentFrameActivity.class)
+                new OpenViewValue(R.id.show_layout_btn, LayoutActivity.class),
+                new OpenViewValue(R.id.show_listview_btn, ListViewActivity.class),
+                new OpenViewValue(R.id.show_recycler_btn, RecyclerViewActivity.class)
         );
     }
 

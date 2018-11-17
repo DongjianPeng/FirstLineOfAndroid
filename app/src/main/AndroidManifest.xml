@@ -54,7 +54,12 @@
         <activity android:name=".view03.LinearLayoutDemo" />
         <activity android:name=".view03.RelativeDemoActivity" />
         <activity android:name=".view03.FrameDemoActivity" />
-        <activity android:name=".view03.PercentFrameActivity"></activity>
+        <activity android:name=".view03.PercentFrameActivity" />
+        <activity android:name=".view03.TitleActivity" />
+        <activity android:name=".view03.IncludeActivity" />
+        <activity android:name=".view03.LayoutActivity" />
+        <activity android:name=".view03.listview.ListViewActivity" />
+        <activity android:name=".view03.RecyclerViewActivity"></activity>
     </application>
 
 </manifest>
